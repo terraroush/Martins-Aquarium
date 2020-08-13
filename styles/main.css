@@ -1,0 +1,84 @@
+body {
+    /* background-image: url("images/thomas-owen-Y8vui_5mdto-unsplash.jpg");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */ 
+    background-color: rgb(194, 244, 194);
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+.logoBox {
+    width: 55px;
+}
+
+.fishLogo {
+    width: 100%;
+	height: auto;
+}
+
+.topHalf {
+    display: flex;
+}
+.fishTank {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border: dotted black 1px;
+}
+.fishCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+    flex-grow: 1;
+    align-items: baseline;
+    
+}
+.fishCard__listBox {
+    flex-shrink: 3;
+    flex-grow: 1;
+}
+.fishCard__picBox {
+    /* width: 125px; */
+    flex-grow: 1;
+}
+.fishCard__pic {
+    width: 100%;
+    height: auto;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    border: dotted black 1px;
+    
+}
+
+.careTips {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 5px;
+}
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+}
+.locationCard {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+}
+.locationCard__picBox {
+    /* width: 125px; */
+    flex-grow: 1;
+}
+.locationCard__pic {
+    width: 100%;
+    height: auto;
+}
