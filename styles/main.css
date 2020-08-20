@@ -27,36 +27,44 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    border: dotted black 1px;
+    flex-basis: 100%;
+}
+
+.fishList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 .fishCard {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     background-color: rgb(255, 255, 255);
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     flex-grow: 1;
-    align-items: baseline;
+    /* align-items: baseline; */
+    flex: 0 1 29%;
+    justify-content: space-between;
     
 }
 .fishCard__listBox {
-    flex-shrink: 3;
+    display: flex;
     flex-grow: 1;
 }
 .fishCard__picBox {
-    /* width: 125px; */
+    display: flex;
     flex-grow: 1;
+    flex: 0 1 100%;
 }
 .fishCard__pic {
+    display: flex;
     width: 100%;
     height: auto;
 }
 aside {
     display: flex;
     flex-direction: column;
-    border: dotted black 1px;
-    
+    flex-grow: 1;
 }
 
 .careTips {
@@ -81,4 +89,11 @@ aside {
 .locationCard__pic {
     width: 100%;
     height: auto;
+}
+
+.hiddenTips {
+    display: none;
+}
+.tipsButton:hover + .hiddenTips {
+    display: block;
 }
