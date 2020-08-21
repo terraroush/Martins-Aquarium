@@ -14,7 +14,7 @@ const fishCollection = [
         imageAlt: "blue and yellow fish",
         name: "Sam",
         species: "Colin's Angelfish",
-        lengthInCM: 7.62,
+        lengthInCM: 8,
         harvestedFrom: "Philippines",
         diet: "Spirulina, marine algae, mysis or frozen shrimp"
     },
@@ -23,7 +23,7 @@ const fishCollection = [
         imageAlt: "small black fish",
         name: "Gandolf",
         species: "Gem Tang",
-        lengthInCM: 22.86,
+        lengthInCM: 21,
         harvestedFrom: "Madagascar",
         diet: "marine-based seaweed and algae"
     },
@@ -32,7 +32,7 @@ const fishCollection = [
         imageAlt: "shiny black and white fish",
         name: "Frodo",
         species: "Wrought Iron Butterflyfish",
-        lengthInCM: 15.24,
+        lengthInCM: 15,
         harvestedFrom: "Southern Japan",
         diet: "Microalgea, Zooplankton, Small crustaceans"
     },
@@ -50,7 +50,7 @@ const fishCollection = [
         imageAlt: "yellow striped long skinny fish",
         name: "Gollum",
         species: "Yellow Multi-Banded Pipefish",
-        lengthInCM: 16.5,
+        lengthInCM: 12,
         harvestedFrom: "Indonesia",
         diet: "live copepods, vitamin-enriched live baby brine shrimp"
     },
