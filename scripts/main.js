@@ -1,10 +1,15 @@
-import { useFish } from './fish/FishDataProvider.js';
 import { FishListComponent } from './fish/FishListComponent.js';
-import { useCare } from './care/CareDataProvider.js'
-import { CareListComponent } from './care/CareListComponent.js'
-// import { useLocations } from './LocationDataProvider.js'
-import { LocationListComponent } from './locations/LocationListComponent.js'
+import { CareListComponent } from './care/CareListComponent.js';
+import { LocationListComponent } from './locations/LocationListComponent.js';
+import { makeMostHolyFish, makeSoldierFish, makeUnworthyFish } from './fish/FishDataProvider.js'
 
-FishListComponent();
+// FishListComponent();
 CareListComponent();
 LocationListComponent();
+
+// makeMostHolyFish();
+// makeSoldierFish();
+// makeUnworthyFish();
+
+FishListComponent();
+

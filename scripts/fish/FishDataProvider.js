@@ -1,3 +1,5 @@
+// This file defines an array of fish objects. It also defines functions for using all or just certain objects within the collection.
+
 const fishCollection = [
  
     {
@@ -65,7 +67,40 @@ const fishCollection = [
     }
     
 ]
-
-export const useFish = () => {
+// This function creates a copy of the array with all fish objects*********ask: is this an array? I need clarification
+export const useFishObjArr = () => {
     return fishCollection.slice()
+}
+// This function iterates all the fish objects, and chooses ones with a property value divisable by 3, and pushes them into a new array.
+export const makeMostHolyFish = () => {
+
+    const mostHolyFishArr = [];
+    for(const fishObj of fishCollection) {
+        if(fishObj.lengthInCM % 3 === 0) {
+            mostHolyFishArr.push(fishObj);
+        }
+    }
+    return mostHolyFishArr;
+}
+// This function iterates all the fish objects, and chooses ones with a property value divisable by 5, and pushes them into a new array.
+export const makeSoldierFish = () => {
+
+    const soldierFishArr = [];
+    for(const fishObj of fishCollection) {
+        if(fishObj.lengthInCM % 5 === 0 && fishObj.lengthInCM % 3 !== 0) {
+            soldierFishArr.push(fishObj);
+        }
+    }
+    return soldierFishArr
+}
+// This function iterates all the fish objects, and chooses ones with a property value neither divisable by 3 nor 5, and pushes them into a new array.
+export const makeUnworthyFish = () => {
+
+    const unworthyFishArr = [];
+    for(const fishObj of fishCollection) {
+        if(fishObj.lengthInCM % 3 !== 0 && fishObj.lengthInCM % 5 !== 0) {
+            unworthyFishArr.push(fishObj)
+        }
+    }
+    return unworthyFishArr;
 }
