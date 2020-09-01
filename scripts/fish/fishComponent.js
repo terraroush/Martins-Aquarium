@@ -1,5 +1,7 @@
+// This function turns any given fish object into a string
+
 export const FishComponent = (fishObj) => {
-    return `
+  return `
         <div class="fishCard">
          <h4 class="fish__name">${fishObj.species}</h4>
         <div class="fishCard__picBox">
@@ -15,5 +17,5 @@ export const FishComponent = (fishObj) => {
             </ul>
         </div>
     </div>  
-    `
-}
+    `;
+};

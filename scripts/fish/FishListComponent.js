@@ -1,30 +1,29 @@
-import { useFishObjArr, makeMostHolyFish, makeSoldierFish, makeUnworthyFish } from './FishDataProvider.js';
-import { FishComponent } from './fishComponent.js';
+import {
+  useFishObjArr,
+  makeMostHolyFish,
+  makeSoldierFish,
+  makeUnworthyFish,
+} from "./FishDataProvider.js";
+import { FishComponent } from "./fishComponent.js";
 
 // This function combines with addFishToDom. This one defines variables that refer to the objects in an array so that we can transform the object data into strig data to put into the dom.
 
 export const FishListComponent = () => {
-    // const fishes = useFishObjArr();
-    const holiestArr = makeMostHolyFish();
-    addFishToDom(holiestArr);
-    const soldiersArr = makeSoldierFish();
-    addFishToDom(soldiersArr);
-    const unworthyArr = makeUnworthyFish();
-    addFishToDom(unworthyArr);
-}   
+  // const fishes = useFishObjArr();
+  const holiestArr = makeMostHolyFish();
+  addFishToDom(holiestArr);
+  const soldiersArr = makeSoldierFish();
+  addFishToDom(soldiersArr);
+  const unworthyArr = makeUnworthyFish();
+  addFishToDom(unworthyArr);
+};
 
-// this function accepts an array. aFishArr acts a a placeholder for whatever array will be used. inside this function: it defines a variable that accesses the place in the dom where you want to put your fish components; iterates over the fish objects from a fish array, and adds the fish objects, one by one to the empty string; finally with dot notation and innerHTML, we transform the objects into strings with template literals, to be displayed on the dom. 
+// This function takes a fish array as parameter; it targets the dom; it maps an array of fish objects and by way of the fishComponent function, turns any given fish objects into HTML strings; those strings are stored/returned in a variable, then added in turn with the .join() method and added to the dom.
 
 const addFishToDom = (aFishArr) => {
-    const contentElement = document.querySelector(".fishList");
-
-    let fishHTMLRepresentation = "";
-    for (const fishObj of aFishArr) {
-        fishHTMLRepresentation += FishComponent(fishObj);
-    }
-     // Add to the existing HTML by using dot natation on contentElement
-    contentElement.innerHTML += `
-        ${fishHTMLRepresentation}
-    `
-}
-    
+  const contentElement = document.querySelector(".fishList");
+  const HTMLStrings = aFishArr.map((fishObj) => {
+    return FishComponent(fishObj);
+  });
+  contentElement.innerHTML += HTMLStrings.join("");
+};
