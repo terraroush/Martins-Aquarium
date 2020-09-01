@@ -1,99 +1,98 @@
 body {
-    /* background-image: url("images/thomas-owen-Y8vui_5mdto-unsplash.jpg");
+  /* background-image: url("images/thomas-owen-Y8vui_5mdto-unsplash.jpg");
     /* background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; */ 
-    background-color: rgb(194, 244, 194);
-    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed; */
+  background-color: rgb(194, 244, 194);
+  font-family: "Raleway", sans-serif;
 }
 
 header {
-    display: flex;
+  display: flex;
 }
 
 .logoBox {
-    width: 55px;
+  width: 55px;
 }
 
 .fishLogo {
-    width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .topHalf {
-    display: flex;
+  display: flex;
 }
 .fishTank {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 .fishList {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 .fishCard {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    padding: 5px;
-    flex-grow: 1;
-    /* align-items: baseline; */
-    flex: 0 1 29%;
-    justify-content: space-between;
-    
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  padding: 5px;
+  flex-grow: 1;
+  /* align-items: baseline; */
+  flex: 0 1 29%;
+  justify-content: space-between;
 }
 .fishCard__listBox {
-    display: flex;
-    flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
 }
 .fishCard__picBox {
-    display: flex;
-    flex-grow: 1;
-    flex: 0 1 100%;
+  display: flex;
+  flex-grow: 1;
+  flex: 0 1 100%;
 }
 .fishCard__pic {
-    display: flex;
-    width: 100%;
-    height: auto;
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 aside {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .careTips {
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    padding: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  padding: 5px;
 }
 .locations {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .locationCard {
-    flex-grow: 1;
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    padding: 5px;
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 5px;
 }
 .locationCard__picBox {
-    /* width: 125px; */
-    flex-grow: 1;
+  /* width: 125px; */
+  flex-grow: 1;
 }
 .locationCard__pic {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .hiddenTips {
-    display: none;
+  display: none;
 }
 .tipsButton:hover + .hiddenTips {
-    display: block;
+  display: block;
 }

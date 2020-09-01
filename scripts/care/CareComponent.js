@@ -1,7 +1,7 @@
 export const CareComponent = (careObj) => {
-    return `
+  return `
         <div>
             <p>${careObj.tip}</p>
         </div>
-        `
-}
+        `;
+};
